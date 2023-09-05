@@ -1,11 +1,11 @@
-![Blog](https://img.shields.io/badge/Lionad--Guirotar-Blog-blueviolet)
+![Blog](https://img.shields.io/badge/SonicMiso--Guirotar-Blog-blueviolet)
 ![LICENSE](https://img.shields.io/badge/license-CC--BY--NC--CD--4.0-blue)
 ![HEART](https://img.shields.io/badge/made%20with-%E2%9D%A4-red)
-![CI Status](https://github.com/Lionad-Morotar/blog/actions/workflows/ci-on-master.yml/badge.svg?branch=master)
+![CI Status](https://github.com/SonicMiso/blog/actions/workflows/ci-on-master.yml/badge.svg?branch=master)
 
-# Lionad's Blog
+# SonicMiso's Blog
 
-My personal websites，build with VuePress. Online URL: [https://www.lionad.art](https://www.lionad.art)
+My personal websites，build with VuePress. Online URL: [https://blog.sonicmiso.zone](https://www.lionad.art), forked from Lionad-Morotar/blog.
 
 ## [Homepage](https://codepen.io/cmykpixels/pen/akYxmW)
 
