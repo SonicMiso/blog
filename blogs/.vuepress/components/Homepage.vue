@@ -3,25 +3,25 @@
         <!-- FireWatch Mountain -->
         <div ref="parallax" class="parallax">
             <div class="parallax__layer parallax__layer__0">
-                <img :src="assets.parallax_0.value" alt="云朵背景图片" class="cloud animation" draggable="false" />
+                <img src="@assert/homepageLayers/layer_0.png" alt="云朵背景图片" class="cloud animation" draggable="false" />
             </div>
             <div class="parallax__layer parallax__layer__1">
-                <img :src="assets.parallax_1.value" alt="山岳背景图片" draggable="false" />
+                <img src="@assert/homepageLayers/layer_1.png" alt="山岳背景图片" draggable="false" />
             </div>
             <div class="parallax__layer parallax__layer__2">
-                <img :src="assets.parallax_2.value" alt="山岳背景图片" draggable="false" />
+                <img src="@assert/homepageLayers/layer_2.png" alt="山岳背景图片" draggable="false" />
             </div>
             <div class="parallax__layer parallax__layer__3">
-                <img :src="assets.parallax_3.value" alt="山岳背景图片" draggable="false" />
+                <img src="@assert/homepageLayers/layer_3.png" alt="山岳背景图片" draggable="false" />
             </div>
             <div class="parallax__layer parallax__layer__4">
-                <img :src="assets.parallax_4.value" alt="山岳背景图片" draggable="false" />
+                <img src="@assert/homepageLayers/layer_4.png" alt="山岳背景图片" draggable="false" />
             </div>
             <div class="parallax__layer parallax__layer__5">
-                <img :src="assets.parallax_5.value" alt="山岳背景图片" draggable="false" />
+                <img src="@assert/homepageLayers/layer_5.png" alt="山岳背景图片" draggable="false" />
             </div>
             <div class="parallax__layer parallax__layer__6">
-                <img :src="assets.parallax_6.value" alt="山岳背景图片" draggable="false" />
+                <img src="@assert/homepageLayers/layer_6.png" alt="山岳背景图片" draggable="false" />
             </div>
             <div class="parallax__cover" />
         </div>
@@ -31,8 +31,8 @@
             <div class="wrapper wrapper-detail">
                 <div class="avatar">
                     <img
-                        src="https://mgear-image.oss-cn-shanghai.aliyuncs.com/image/avatar.gif"
-                        alt="Lionad's Avatar"
+                        src='../public/what.gif'
+                        alt="SonicMiso's Avatar"
                         draggable="false"
                     />
                 </div>
@@ -57,7 +57,6 @@
 
                 <div class="footer" v-if="data.footer">
                     <span>{{ data.footer }}<span class="seg"> / </span></span>
-                    <a href="http://beian.miit.gov.cn/" target="_blank" rel="nofollow">沪ICP备2021001426号<span class="seg"> / </span></a>
                     <a href="/friends">与我联络 & 友情链接(Links)</a>
                 </div>
             </div>
@@ -67,7 +66,7 @@
         <Gesture :swipeDown="() => changeSlide('down')" freezeTime="300" :eventInvoke="stopMove">
             <div class="wrapper wrapper-brief">
                 <div class="page-title-con">
-                    <div class="page-title">Lionad's Blog</div>
+                    <div class="page-title">SonicMiso's Blog</div>
                     <div class="page-side-title">Newest Posts</div>
                     <div class="page-side-content">
                         <template v-for="article in recommends">
@@ -91,7 +90,6 @@ import Gesture from './Segments/Gesture'
 
 const sidebar = require('../sidebar')
 const utils = require('./utils')
-
 const SLIDES = ['brief', 'detail']
 
 export default {
@@ -103,51 +101,7 @@ export default {
             sidebar,
             recommends: Object.entries(sidebar.getRecommends()),
             slide: SLIDES[0],
-            scrollHeight: null,
-            assets: {
-                parallax_0: {
-                    sort: 0,
-                    delay: 100 * 6,
-                    value: 'https://mgear-image.oss-cn-shanghai.aliyuncs.com/image/homepage/layer_0.png',
-                    cb: () => this.$set(this.assets.parallax_0, 'done', true)
-                },
-                parallax_1: {
-                    sort: 1,
-                    delay: 100 * 5,
-                    value: 'https://mgear-image.oss-cn-shanghai.aliyuncs.com/image/homepage/layer_1.png',
-                    cb: () => this.$set(this.assets.parallax_1, 'done', true)
-                },
-                parallax_2: {
-                    sort: 2,
-                    delay: 100 * 4,
-                    value: 'https://mgear-image.oss-cn-shanghai.aliyuncs.com/image/homepage/layer_2.png',
-                    cb: () => this.$set(this.assets.parallax_2, 'done', true)
-                },
-                parallax_3: {
-                    sort: 3,
-                    delay: 100 * 3,
-                    value: 'https://mgear-image.oss-cn-shanghai.aliyuncs.com/image/homepage/layer_3.png',
-                    cb: () => this.$set(this.assets.parallax_3, 'done', true)
-                },
-                parallax_4: {
-                    sort: 4,
-                    delay: 100 * 2,
-                    value: 'https://mgear-image.oss-cn-shanghai.aliyuncs.com/image/homepage/layer_4.png',
-                    cb: () => this.$set(this.assets.parallax_4, 'done', true)
-                },
-                parallax_5: {
-                    sort: 5,
-                    delay: 100 * 1,
-                    value: 'https://mgear-image.oss-cn-shanghai.aliyuncs.com/image/homepage/layer_5.png',
-                    cb: () => this.$set(this.assets.parallax_5, 'done', true)
-                },
-                parallax_6: {
-                    sort: 6,
-                    delay: 100 * 0,
-                    value: 'https://mgear-image.oss-cn-shanghai.aliyuncs.com/image/homepage/layer_6.png',
-                    cb: () => this.$set(this.assets.parallax_6, 'done', true)
-                }
-            }
+            scrollHeight: null
         }
     },
     computed: {

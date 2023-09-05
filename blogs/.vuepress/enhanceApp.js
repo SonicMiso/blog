@@ -42,16 +42,21 @@ export default ({
 
   Vue.prototype.$utils = utils
 
-  setTimeout(() => {
-    // https://app.highlight.io/7745/setup/client/js/vue
-    H.init('4g8940d5', {
-      environment: 'production',
-      version: 'v1.0.0',
-      networkRecording: {
-        enabled: true,
-        recordHeadersAndBody: true,
-        urlBlocklist: ['https://www.googleapis.com/identitytoolkit', 'https://securetoken.googleapis.com'],
-      },
-    })
-  }, 3000)
+  // setTimeout(() => {
+  //   // https://app.highlight.io/11654/setup/client/js/vue
+  //   H.init('1epnwqgn', {
+  //     environment: 'production',
+  //     version: 'commit:abcdefg12345',
+  //     networkRecording: {
+  //       enabled: true,
+  //       recordHeadersAndBody: true,
+  //       urlBlocklist: [
+  //         // insert full or partial urls that you don't want to record here
+  //         // Out of the box, Highlight will not record these URLs (they can be safely removed):
+  //         "https://www.googleapis.com/identitytoolkit",
+  //         "https://securetoken.googleapis.com",
+  //       ],
+  //     },
+  //   });
+  // }, 3000)
 }

@@ -4,7 +4,7 @@
         <template v-else>
             <div class="left-con">
                 <div class="commend-image-con">
-                    <img class="commend-image" :title="caption" :alt="caption" :src="src" style="" />
+                    <img class="commend-image" :title="caption" :alt="caption" :src="src" style=""/>
                     <div class="commend-image-name">{{ caption }}</div>
                 </div>
                 <details v-if="tags" class="tag-con" open>

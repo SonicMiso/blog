@@ -8,10 +8,10 @@ console.log('USE NODE_ENV:', process.env.NODE_ENV)
 // let secretsDir = path.join(__dirname, '../secrets')
 // let mapsDir = path.join(__dirname, '../maps')
 
-let gistsDir = 'D:\\@Github\\blog\\blogs\\gists'
-let awesomeDir = 'D:\\@Github\\blog\\blogs\\awesome'
-let secretsDir = 'D:\\@Github\\blog\\blogs\\secrets'
-let mapsDir = 'D:\\@Github\\blog\\blogs\\maps'
+let gistsDir = 'L:\\Workspace\\blog\\blogs\\gists'
+let awesomeDir = 'L:\\Workspace\\blog\\blogs\\awesome'
+let secretsDir = 'L:\\Workspace\\blog\\blogs\\secrets'
+let mapsDir = 'L:\\Workspace\\blog\\blogs\\maps'
 
 /**
  * 获取目录下所有 Markdown 文件
@@ -50,16 +50,7 @@ const sidebars = [
     path: '/flows/',
     children: [
       // 'flows/brain-history',
-      // 'flows/rss',
-      'flows/books',
-      'flows/long-night-dream',
-      'flows/everything',
-      'flows/stolen-time-from-god',
-      'flows/expression-and-loneliness',
-      'flows/my-shy',
-      'flows/drinking-while-thinking',
-      'flows/escape-from-mysticism',
-      'flows/zfold',
+      'flows/gods-know'
     ],
   },
   {
@@ -69,42 +60,10 @@ const sidebars = [
     open: true,
     path: '/articles/',
     children: [
-      'articles/use-gpt-learn-complex-frontend',
-      'articles/use-scrollbars',
       // 'articales/even-more-modern-error-handling',
       // 'articles/image-format',
-      'articles/zindex-manager',
-      // 'articles/windows',
-      'articles/crack-the-slider',
-      'articles/css-light-travel',
-      'articles/design-patterns-and-js-magic-pot',
-      'articles/anysort-2th',
-      'articles/js-100',
-      'articles/helmet-and-security',
-      'articles/css-poaa',
-      'articles/css-judge-direction',
-      'articles/css-interesting',
-      'articles/no-more-if-else',
-      // 'articles/front-end-mind-map',
-      // 'articles/css-mind-map',
-      'articles/fourty-two',
-      'articles/source-code',
-      'articles/zfold',
+      // 'articles/windows'
     ],
-  },
-  {
-    title: '玩乐广场 / Paint',
-    collapsable: true,
-    open: false,
-    path: '/awesome/',
-    children: getSRCs(awesomeDir, 'awesome/'),
-  },
-  {
-    title: '等待整理',
-    collapsable: true,
-    open: false,
-    path: '/gists/',
-    children: getSRCs(gistsDir, 'gists/'),
   },
   {
     title: '知识骨架',
@@ -112,21 +71,6 @@ const sidebars = [
     open: false,
     path: '/maps/',
     children: getSRCs(mapsDir, 'maps/'),
-  },
-  {
-    title: '吉他剧场',
-    collapsable: true,
-    open: false,
-    path: '/music/',
-    children: [
-      'music/wait-for-wind',
-      'music/promise-ocean',
-      'music/wings-you-are-the-hero',
-      'music/eva',
-      'music/miracle-mountain',
-      'music/wu-wei',
-      'music/noname',
-    ],
   },
   {
     title: 'Secrets',
@@ -144,13 +88,13 @@ module.exports = {
   getRecommends() {
     return {
       心流: {
-        url: '/flows/long-night-dream.html',
-        label: '长夜梦',
+        url: '/flows/gods-know.html',
+        label: 'gods-know',
       },
-      技术: {
-        url: '/articles/use-gpt-learn-complex-frontend.html',
-        label: '如何向 GPT 咨询前端问题',
-      },
+      // 技术: {
+      //   url: '/articles/use-gpt-learn-complex-frontend.html',
+      //   label: '如何向 GPT 咨询前端问题',
+      // },
     }
   }
 }

@@ -11398,7 +11398,7 @@ ${JSON.stringify(GlobalDataGenerator.getGlobalGraph(ExportSettings.settings.grap
 <script src="${relativePaths.jsPath}/tinycolor.js"><\/script>
 `;
       scripts += `
-<script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/7.2.4/pixi.min.js" integrity="sha512-Ch/O6kL8BqUwAfCF7Ie5SX1Hin+BJgYH4pNjRqXdTEqMsis1TUYg+j6nnI9uduPjGaj7DN4UKCZgpvoExt6dkw==" crossorigin="anonymous" referrerpolicy="no-referrer"><\/script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/7.2.4/pixi.min.js" integrity="sha512-Ch/O6kL8BqUwAfCF7Ie5SX1Hin+BJgYH4pNjRqXdTEqMsis1TUYg+j6nnI9uduPjGaj7DN4UKCZgpvoExt6dkw==" referrerpolicy="no-referrer"><\/script>
 `;
     }
     if (ExportSettings.settings.inlineJS) {
