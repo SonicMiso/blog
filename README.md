@@ -9,7 +9,7 @@ My personal websites，build with VuePress. Online URL: [https://blog.sonicmiso.
 
 ## [Homepage](https://codepen.io/cmykpixels/pen/akYxmW)
 
-<img src="@assert/homepage.png" alt="Homepage" style="border: 1px solid" />
+<img src="https://cdn.staticaly.com/gh/SonicMiso/blog-imgs@main/homepage.6thcvy3cezw0.webp" alt="Homepage" style="border: 1px solid" />
 
 modified from Fire Watcher
 
